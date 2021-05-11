@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Gear Snakeyyyy</title>
+    <link rel ="stylesheet" type = "text/css" href = "snakey_game.css">
+</head>
+<body>
+    <!--main game board-->
+    <div id="gameContainer"></div>
+    <!--scoreboard-->
+    <div id ="scoreContainer">
+        <div class="scoreBoard">Ammo: <span id = "pointsEarned">0</span></div>
+        <div class="scoreBoard">Distances: <span id = "blocksTravelled">0</span></div>   
+    </div>
+
+    <!--onscreen controller using the directional pad-->
+    <div id="onScreenControllers">
+        <button id="leftButton">L</button>
+        <button id="upButton">U</button>
+        <button id="downButton">D</button>
+        <button id="rightButton">R</button>
+    </div>
+</body>
+<!--load the snakey.js containing the game logic-->
+<script src="snakey_game.js"></script>
+</html>
